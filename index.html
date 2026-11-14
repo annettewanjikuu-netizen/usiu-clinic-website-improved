@@ -1,0 +1,430 @@
+<!doctype html> <html lang="en">
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>USIU Clinic | Campus Care</title> <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"> <style> :root{--blue:#124c83;--deep:#0c345c;--yellow:#f6cc42;--pale:#fff8dd;--white:#fff;--ink: #17324b;--muted:#516a7c;--line:#d9e5eb} *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;width:100%;backgrou nd:#f3f8fb;color:var(--ink);font-family:"DM Sans",sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opa city:.65;cursor:wait}a,button,input,select{outline-offset:3px}:focus-visible{outline:3px solid #ac7900} h1,h2,h3{font-family:Fraunces,serif;line-height:1.15;letter-spacing:-.035em}h1,h2,h3,p{overfl ow-wrap:anywhere} .shell{width:100%;min-height:calc(100 * min(var(--vh, 1vh), 1vh));display:flex;flex-direction:column}.wide{width:100%;max-width:1200px;margin-inline: auto;padding-inline:clamp(20px,5vw,64px)} .top-rule{height:8px;background:linear-gradient(90deg,var(--blue) 0 33.33%,var(--yellow) 33.33% 66.66%,var(--white) 66.66%)} .header{background:#fff;border-bottom:1px solid var(--line);position:relative;z-index:2}.header-row{min-height:82px;display:flex;align-items: center;justify-content:space-between;gap:18px}.brand{display:inline-flex;align-items:cente r;gap:12px;text-decoration:none;color:var(--deep);font-weight:700;white-space:nowrap}.log o{width:45px;height:45px;background:var(--yellow);color:var(--deep);border-radius:14px 14px 14px 4px;display:grid;place-items:center;position:relative;line-height:1;box-shadow:inset 0 -4px 0 #e8b92f}.logo:before,.logo:after{content:"";position:absolute;background:var(--deep);borde r-radius:3px}.logo:before{width:24px;height:7px}.logo:after{width:7px;height:24px}.brand-te xt{font-size:19px} .nav{display:flex;align-items:center;justify-content:flex-end;gap:2px;flex-wrap:wrap}.nav button,.mobile-nav button{border:0;background:transparent;color:var(--ink);border-radius:9px;padding:9px;fo nt-size:12px;font-weight:700}.nav button:hover,.nav button[aria-current="page"],.mobile-nav button:hover,.mobile-nav button[aria-current="page"]{background:var(--pale);color:var(--deep)}.menu-button{displa y:none;border:1px solid var(--line);border-radius:10px;background:white;padding:10px;color:var(--deep)}.mobile-na v{display:none;border-top:1px solid var(--line);padding-block:12px 20px}.mobile-nav.open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px } main{flex:1}.page{display:none;animation:rise .32s ease both}.page.active{display:block}@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.eyebro w{font-size:12px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(- -blue)} .hero{background:linear-gradient(115deg,#124c83 0 52%,#f6cc42 52%);overflow:hidden;color:#fff}.hero h1{color:#fff}.hero .lead{color:#e5f1ff}.hero .eyebrow{color:#f6cc42}.hero-layout{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:38px;min-height:510px;padding-block:75px}.hero h1{font-size:clamp(42px,5.7vw,76px);margin:15px 0 20px;color:var(--deep);max-width:650px}.lead{max-width:560px;color:var(--muted);font-si ze:18px;line-height:1.7}.hero-art{height:335px;position:relative;display:grid;place-items:cent er}.hero-ring{width:min(85%,300px);aspect-ratio:1;border:30px solid var(--yellow);border-radius:50%;box-shadow:25px 25px 0 var(--blue);background:white;color:var(--blue);display:grid;place-items:center;font-size:145 px;font-weight:700;line-height:1}.hero-art:after{content:"";position:absolute;right:13%;top:1 0%;width:22px;height:22px;background:var(--blue);border-radius:50%} .actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:26px}.btn{min-height:46px;display :inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:10px;padding:11 px 18px;font-weight:700;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #123c6325}.btn-primary{background:var(--blue);border:1px solid var(--blue);color:white}.btn-outline{background:white;border:1px solid var(--blue);color:var(--blue)}.btn-yellow{background:var(--yellow);border:1px solid var(--yellow);color:var(--deep)} .section-space{padding-block:70px}.section-title{max-width:700px;margin-bottom:28px}.s ection-title h2,.page-head h1{color:var(--deep);font-size:clamp(33px,4vw,50px);margin:10px 0}.section-title p,.page-head p{color:var(--muted);line-height:1.7}.cards{display:grid;grid-template-columns:repeat(3,min max(0,1fr));gap:16px}.card,.panel,.metric{background:#fff;border:1px solid var(--line);border-radius:19px;box-shadow:0 10px 28px #123c6309}.card{padding:27px;background:var(--pale)}.card:nth-child(2){background:var(-- yellow)}.card:nth-child(3){background:#e7f2fb}.card h2,.card h3{color:var(--deep);margin:20px 0 10px}.card p,.panel p{color:var(--muted);line-height:1.65}.icon-box{width:46px;height:46px;background:var(--y ellow);color:var(--deep);border-radius:13px;display:grid;place-items:center}.icon-box svg{width:23px;height:23px}.band{background:var(--blue);color:white;padding-block:44px}. band-row{display:flex;justify-content:space-between;align-items:center;gap:22px}.band h2{margin:0 0 9px;color:white}.band p{margin:0;color:#e5f1ff;line-height:1.6} .page-head{background:var(--blue);border-bottom:1px solid var(--deep);padding-block:54px 32px;color:#fff}.page-head h1{color:#fff}.page-head p{color:#e5f1ff}.page-head .eyebrow{color:var(--yellow)}.page-head p{max-width:760px;margin-bottom:0}.content{padding-block:38px 72px}.split{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.75fr);gap:23px;align-items:start}.panel{padding:clamp(23px,3vw,34px)}.panel h2{color:var(--deep);margin:0 0 14px}.panel-blue{background:var(--blue);border-color:var(--blue)}.panel-blue h2,.panel-blue p{color:white}.panel-yellow{background:var(--pale);border-color:#f2e9c7} .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.field{displa y:flex;flex-direction:column;gap:7px}.field label{color:var(--deep);font-size:14px;font-weight:700}.field input,.field select{width:100%;min-height:47px;background:#fff;border:1px solid #b9ccd9;border-radius:9px;padding:10px 12px;color:var(--ink)}.field input:focus,.field select:focus{border-color:var(--blue)}.form-foot{display:flex;align-items:center;flex-wrap:w rap;gap:14px;margin-top:24px}.small{font-size:13px;color:var(--muted);line-height:1.5}.mess age{min-height:22px;font-weight:700;line-height:1.5}.error{color:#a22c2c}.success{color:#1 7653c} .notice{border-left:4px solid var(--yellow);background:var(--pale);padding:16px 18px;border-radius:0 10px 10px 0;color:var(--deep);line-height:1.6}.schedule-top{display:flex;justify-content:space-between ;align-items:center;gap:12px;flex-wrap:wrap}.schedule-top h2{margin:0}.slot-list{display:grid;gap:10px;margin-top:18px}.slot{display:grid;grid-template -columns:1.4fr 1fr .8fr auto;gap:12px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:12px;background:white}.slot strong{color:var(--deep)}.slot span{color:var(--muted)}.pill{padding:6px 10px;border-radius:99px;background:var(--pale);font-size:12px;font-weight:700;color:var(-- deep)!important} .metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-botto m:22px}.metric{padding:21px}.metric:nth-child(2){background:var(--pale)}.metric:nth-child( 3){background:var(--blue);color:#fff;border-color:var(--blue)}.metric strong{display:block;font:600 38px Fraunces,serif;line-height:1.15}.metric span{font-size:13px;font-weight:700}.footer{background:#092f54;color:white;padding:38px 0 25px}.footer-row{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.foot er h2{color:white;margin:0 0 10px}.footer p{color:#d8e8f5;max-width:400px;line-height:1.6;margin:0}.footer nav{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}.footer button{background:transparent;border:0;color:white;text-decoration:underline;text-under line-offset:4px;padding:8px}.footer-bottom{border-top:1px solid #ffffff35;margin-top:29px;padding-top:19px;color:#d8e8f5;font-size:13px}.hidden{display:n one!important} @media(max-width:1050px){.nav{display:none}.menu-button{display:inline-flex}} @media(max-width:760px){.hero-layout,.split{grid-template-columns:1fr}.hero-layout{paddi ng-block:48px}.hero-art{height:220px;order:-1}.hero-ring{width:175px;border-width:18px;b ox-shadow:15px 15px 0 var(--blue);font-size:95px}.cards,.metrics{grid-template-columns:1fr}.band-row{align-items :flex-start;flex-direction:column}.section-space{padding-block:55px}.slot{grid-template-co lumns:1fr 1fr}} @media(max-width:500px){.form-grid,.slot{grid-template-columns:1fr}.hero h1{font-size:42px}.page-head{padding-block:42px 27px}} @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!impo rtant;transition-duration:.01ms!important;scroll-behavior:auto!important}} </style> <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript">
+</script>  </head> <body style="background: rgb(243, 248, 251);"> <div class="shell"> <header class="header canva-header" style="background: rgb(255, 255, 255);"> <div class="top-rule" aria-hidden="true">
+</div> <div class="wide header-row">
+<a href="#home" data-go="home" class="brand" aria-label="USIU Clinic home">
+<span class="logo" aria-hidden="true">
+</span>
+<span class="brand-text canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 19px;">USIU Clinic</span>
+</a> <nav class="nav" aria-label="Main navigation">
+<button type="button" data-go="home">Home</button>
+<button type="button" data-go="book">Book appointment</button>
+<button type="button" data-go="appointments">Appointments</button>
+<button type="button" data-go="patient">Patient view</button>
+<button type="button" data-go="doctor">Doctor view</button>
+<button type="button" data-go="admin">Admin view</button>
+<button type="button" data-go="login">Login</button>
+<button type="button" data-go="register">Register</button> </nav>
+<button id="menu-button" type="button" class="menu-button" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
+<i data-lucide="menu" aria-hidden="true">
+</i>
+</button> </div> <nav id="mobile-nav" class="wide mobile-nav" aria-label="Mobile navigation">
+<button type="button" data-go="home">Home</button>
+<button type="button" data-go="book">Book appointment</button>
+<button type="button" data-go="appointments">Appointments</button>
+<button type="button" data-go="patient">Patient view</button>
+<button type="button" data-go="doctor">Doctor view</button>
+<button type="button" data-go="admin">Admin view</button>
+<button type="button" data-go="login">Login</button>
+<button type="button" data-go="register">Register</button> </nav> </header> <main id="main-content"> <section id="page-home" class="page active" aria-labelledby="home-title"> <div class="hero canva-banner" style="background: linear-gradient(115deg, rgb(255, 255, 255), rgb(255, 248, 221));"> <div class="wide hero-layout"> <div> <span class="eyebrow canva-text" style="color: rgb(18, 76, 131);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;">CAMPUS CARE, MADE SIMPLE</span> <h1 id="home-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;">Feel better. Keep moving forward.</h1> <p class="lead canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;">A welcoming first step toward campus care. Request a visit with USIU Clinic and let the team confirm a time that works.</p> <div class="actions"> <button type="button" data-go="book" class="btn btn-primary canva-button" style="background: rgb(18, 76, 131);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">Request an appointment</button>
+<button type="button" data-go="appointments" class="btn btn-outline canva-button" style="background: rgb(255, 255, 255);
+  color: rgb(18, 76, 131);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">View public schedule</button> </div> </div> <div class="hero-art" aria-hidden="true"> <div class="hero-ring"> + </div> </div> </div> </div> <div class="wide section-space"> <div class="section-title"> <span class="eyebrow canva-text" style="color: rgb(18, 76, 131);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;">HERE FOR YOU</span> <h2 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Care for the everyday.</h2> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">A clear path to the support you need, right here on campus.</p> </div> <div class="cards"> <article class="card canva-card" style="background: rgb(255, 248, 221);"> <div class="icon-box"> <i data-lucide="stethoscope" aria-hidden="true">
+</i> </div> <h3 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 19px;">General care</h3> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Request help with everyday health questions and concerns.</p> </article> <article class="card canva-card" style="background: rgb(255, 248, 221);"> <div class="icon-box"> <i data-lucide="heart-pulse" aria-hidden="true">
+</i> </div> <h3 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 19px;">Wellness support</h3> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Make space for preventive care and supportive conversations.</p> </article> <article class="card canva-card" style="background: rgb(231, 242, 251);"> <div class="icon-box"> <i data-lucide="calendar-days" aria-hidden="true">
+</i> </div> <h3 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 19px;">Easy requests</h3> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Choose a preferred visit time and await clinic confirmation.</p> </article> </div> </div> <div class="band canva-banner" style="background: rgb(18, 76, 131);"> <div class="wide band-row"> <div> <h2 class="canva-text" style="color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Ready when you are.</h2> <p class="canva-text" style="color: rgb(229, 241, 255);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">A request takes only a moment. The clinic will follow up to confirm.</p> </div>
+<button type="button" data-go="book" class="btn btn-yellow canva-button" style="background: rgb(246, 204, 66);
+  color: rgb(12, 52, 92);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">Get started</button> </div> </div> </section> <section id="page-login" class="page" aria-labelledby="login-title"> <div class="page-head"> <div class="wide"> <span class="eyebrow">ACCESS</span> <h1 id="login-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;">Login</h1> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">A clear route to the care options available on this public site.</p> </div> </div> <div class="wide content split"> <article class="panel"> <h2 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">No account login on this site</h2> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">This public clinic website does not authenticate patients or staff. You can request an appointment without signing in or explore public requested slots.</p> <div class="actions"> <button type="button" data-go="book" class="btn btn-primary canva-button" style="background: rgb(18, 76, 131);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">Request an appointment</button>
+<button type="button" data-go="appointments" class="btn btn-outline canva-button" style="background: rgb(255, 255, 255);
+  color: rgb(18, 76, 131);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">View public schedule</button> </div> </article> <aside class="panel panel-yellow canva-panel" style="background: rgb(255, 248, 221);"> <h2 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Privacy first</h2> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">The public schedule does not display names or contact details.</p> </aside> </div> </section> <section id="page-register" class="page" aria-labelledby="register-title"> <div class="page-head"> <div class="wide"> <span class="eyebrow">GET STARTED</span> <h1 id="register-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;">Register</h1> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Connect with campus care without creating an account.</p> </div> </div> <div class="wide content split"> <article class="panel"> <h2 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">No registration required</h2> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Accounts are not offered here. Use the appointment request form to share your preferred visit time and contact details with the clinic.</p>
+<button type="button" data-go="book" class="btn btn-primary canva-button" style="background: rgb(18, 76, 131);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">Go to appointment request</button> </article> <aside class="panel panel-blue canva-panel" style="background: rgb(18, 76, 131);"> <h2 class="canva-text" style="color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">What happens next?</h2> <p class="canva-text" style="color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">The clinic reviews your request and contacts you to confirm availability. A request is not a booking.</p> </aside> </div> </section> <section id="page-patient" class="page" aria-labelledby="patient-title"> <div class="page-head"> <div class="wide"> <span class="eyebrow">PATIENT VIEW · PUBLIC PREVIEW</span> <h1 id="patient-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;">Your starting point for care.</h1> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Explore public clinic actions. This is not a personal dashboard or medical record.</p> </div> </div> <div class="wide content cards"> <article class="card"> <div class="icon-box"> <i data-lucide="calendar-plus" aria-hidden="true">
+</i> </div> <h2 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Request a visit</h2> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Tell the clinic when you would prefer to come in.</p> <div class="actions"> <button type="button" data-go="book" class="btn btn-primary canva-button" style="background: rgb(18, 76, 131);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">Book appointment</button> </div> </article> <article class="card"> <div class="icon-box"> <i data-lucide="calendar-range" aria-hidden="true">
+</i> </div> <h2 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Public schedule</h2> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">See requested slots without anyone's private details.</p> <div class="actions"> <button type="button" data-go="appointments" class="btn btn-outline canva-button" style="background: rgb(255, 255, 255);
+  color: rgb(18, 76, 131);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">See schedule</button> </div> </article> <article class="card"> <div class="icon-box"> <i data-lucide="shield-check" aria-hidden="true">
+</i> </div> <h2 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Your privacy</h2> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Personal appointment history and patient accounts are not available in this public view.</p> </article> </div> </section> <section id="page-book" class="page" aria-labelledby="book-title"> <div class="page-head"> <div class="wide"> <span class="eyebrow">APPOINTMENT REQUEST</span> <h1 id="book-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;">Let's plan your visit.</h1> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Share a preferred date and time. The clinic will contact you to confirm availability.</p> </div> </div> <div class="wide content split"> <section class="panel" aria-labelledby="form-title"> <h2 id="form-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Your details</h2> <form id="booking-form"> <div class="form-grid"> <div class="field"> <label for="full-name" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;">Full name</label>
+<input id="full-name" name="full_name" autocomplete="name" maxlength="100" required=""> </div> <div class="field"> <label for="email" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;">Email address</label>
+<input id="email" name="email" type="email" autocomplete="email" maxlength="160" required=""> </div> <div class="field"> <label for="phone" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;">Phone number</label>
+<input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="30" required=""> </div> <div class="field"> <label for="department" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;">Department</label>
+<select id="department" name="department" required="">
+<option value="">Choose a department</option>
+<option value="General care">General care</option>
+<option value="Wellness">Wellness</option>
+<option value="Nursing">Nursing</option>
+</select> </div> <div class="field"> <label for="preferred-date" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;">Preferred date</label>
+<input id="preferred-date" name="preferred_date" type="date" required=""> </div> <div class="field"> <label for="preferred-time" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;">Preferred time</label>
+<input id="preferred-time" name="preferred_time" type="time" required=""> </div> </div> <div class="form-foot"> <button id="submit-booking" type="submit" class="btn btn-primary canva-button" style="background: rgb(18, 76, 131);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">Send request</button>
+<span class="small canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;">A request does not confirm an appointment.</span> </div> <p id="booking-status" class="message" role="status" aria-live="polite">
+</p> </form> </section> <aside class="panel panel-blue canva-panel" style="background: rgb(18, 76, 131);"> <div class="icon-box"> <i data-lucide="clipboard-check" aria-hidden="true">
+</i> </div> <h2 class="canva-text" style="margin-top: 22px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">One simple first step</h2> <p class="canva-text" style="color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Provide a way to reach you and choose a preferred slot. The clinic will review the request and contact you about availability.</p> </aside> </div> </section> <section id="page-appointments" class="page" aria-labelledby="appointments-title"> <div class="page-head"> <div class="wide"> <span class="eyebrow">PUBLIC SCHEDULE</span> <h1 id="appointments-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;">Appointments &amp;
+  history</h1> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Browse public request slots. Personal history and confirmed appointments are not available here.</p> </div> </div> <div class="wide content"> <div class="notice canva-banner" style="background: rgb(255, 248, 221);
+  color: rgb(12, 52, 92);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Names and contact details are never shown. Requested times may not be available.</div> <section class="panel" style="margin-top:22px" aria-labelledby="schedule-title"> <div class="schedule-top"> <h2 id="schedule-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Requested slots</h2>
+<button id="retry-button" type="button" class="btn btn-outline canva-button hidden" style="background: rgb(255, 255, 255);
+  color: rgb(18, 76, 131);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">Retry loading</button> </div> <p id="schedule-message" role="status" aria-live="polite">Loading public schedule…</p> <div id="schedule-list" class="slot-list">
+</div> </section> </div> </section> <section id="page-doctor" class="page" aria-labelledby="doctor-title"> <div class="page-head"> <div class="wide"> <span class="eyebrow">DOCTOR VIEW · PUBLIC PREVIEW</span> <h1 id="doctor-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;">Schedule at a glance.</h1> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">An overview of public request activity, not a clinical workspace.</p> </div> </div> <div class="wide content"> <div class="metrics"> <div class="metric"> <strong id="doctor-total">—</strong>
+<span class="canva-text" style="font-weight: 700;
+  font-style: normal;
+  font-size: 13px;">Public requests</span> </div> <div class="metric"> <strong id="doctor-upcoming">—</strong>
+<span class="canva-text" style="font-weight: 700;
+  font-style: normal;
+  font-size: 13px;">Upcoming requested slots</span> </div> <div class="metric"> <strong id="doctor-departments">—</strong>
+<span class="canva-text" style="color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;">Departments represented</span> </div> </div> <article class="panel"> <h2 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Clinical details stay private</h2> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">Patient identities, medical information, and staff-only actions are not available in this public preview.</p>
+<button type="button" data-go="appointments" class="btn btn-outline canva-button" style="background: rgb(255, 255, 255);
+  color: rgb(18, 76, 131);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;">View public slots</button> </article> </div> </section> <section id="page-admin" class="page" aria-labelledby="admin-title"> <div class="page-head"> <div class="wide"> <span class="eyebrow">ADMIN VIEW · PUBLIC PREVIEW</span> <h1 id="admin-title" class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;">A clearer view of requests.</h1> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">A simple public overview, without administrative access or private records.</p> </div> </div> <div class="wide content"> <div class="metrics"> <div class="metric"> <strong id="admin-total">—</strong>
+<span class="canva-text" style="font-weight: 700;
+  font-style: normal;
+  font-size: 13px;">Public requests</span> </div> <div class="metric"> <strong id="admin-requested">—</strong>
+<span class="canva-text" style="font-weight: 700;
+  font-style: normal;
+  font-size: 13px;">Awaiting confirmation</span> </div> <div class="metric"> <strong id="admin-departments">—</strong>
+<span class="canva-text" style="color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;">Departments represented</span> </div> </div> <article class="panel panel-yellow canva-panel" style="background: rgb(255, 248, 221);"> <h2 class="canva-text" style="color: rgb(12, 52, 92);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">Preview only</h2> <p class="canva-text" style="color: rgb(81, 106, 124);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">This public view cannot approve requests, manage patients, or access contact information. The clinic reviews submitted requests separately.</p> </article> </div> </section> </main> <footer class="footer canva-footer" style="background: rgb(9, 47, 84);"> <div class="wide"> <div class="footer-row"> <div> <h2 class="canva-text" style="color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;">USIU Clinic</h2> <p class="canva-text" style="color: rgb(216, 232, 245);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;">An easier starting point for campus care. Request a visit and await confirmation from the clinic.</p> </div> <nav aria-label="Footer navigation"> <button type="button" data-go="home">Home</button>
+<button type="button" data-go="book">Book</button>
+<button type="button" data-go="appointments">Public schedule</button> </nav> </div> <div class="footer-bottom canva-text" style="color: rgb(216, 232, 245);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;">USIU Clinic · Caring for our community</div> </div> </footer> </div> <template id="slot-template"> <article class="slot canva-card"> <strong class="canva-text">
+</strong>
+<span class="canva-text">
+</span>
+<span class="canva-text">
+</span>
+<span class="pill canva-tag">
+</span> </article> </template> <script> const pageNames = new Set(['home','login','register','patient','book','appointments','doctor','admin']);
+  const mobileNav = document.getElementById('mobile-nav');
+  const menuButton = document.getElementById('menu-button');
+  function showPage(name) { if (!pageNames.has(name)) name = 'home';
+  document.querySelectorAll('.page').forEach(page => page.classList.toggle('active',page.id === 'page-' + name));
+  document.querySelectorAll('.nav button,.mobile-nav button').forEach(button => { if (button.dataset.go === name) button.setAttribute('aria-current','page');
+  else button.removeAttribute('aria-current');
+  });
+  mobileNav.classList.remove('open');
+  menuButton.setAttribute('aria-expanded','false');
+  window.scrollTo(0,0);
+  } document.querySelectorAll('[data-go]').forEach(control => control.addEventListener('click', event => { event.preventDefault();
+  showPage(control.dataset.go);
+  }));
+  menuButton.addEventListener('click',() => { const open = mobileNav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded',String(open));
+  });
+  if (window.lucide) lucide.createIcons();
+  let backendRecords = [];
+  const STORAGE_KEY = 'usiuClinicAppointmentRequests';
+  const scheduleList = document.getElementById('schedule-list');
+  const scheduleMessage = document.getElementById('schedule-message');
+  const retryButton = document.getElementById('retry-button');
+  const form = document.getElementById('booking-form');
+  const dateInput = document.getElementById('preferred-date');
+  const submitButton = document.getElementById('submit-booking');
+  const bookingStatus = document.getElementById('booking-status');
+  const validDate = value => /^\d{4}-\d{2}-\d{2}$/.test(value || '') ? value : '';
+  function displayDate(value) {
+    const date = validDate(value);
+    if (!date) return 'Date unavailable';
+    const parsed = new Date(date + 'T12:00:00');
+    return Number.isNaN(parsed.getTime()) ? 'Date unavailable' : new Intl.DateTimeFormat('en-KE',{day:'numeric',month:'short',year:'numeric'}).format(parsed);
+  }
+  function setText(element,value) { if (element) element.textContent = value;
+  }
+  function readRecords() {
+    try { const value = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+  return Array.isArray(value) ? value : [];
+  }
+    catch (_) { return [];
+  }
+  }
+  function renderSchedule() {
+    backendRecords = readRecords().sort((a,b) => (String(a.preferred_date || '') + String(a.preferred_time || '')).localeCompare(String(b.preferred_date || '') + String(b.preferred_time || '')));
+    scheduleList.replaceChildren();
+    for (const record of backendRecords) {
+      const node = document.getElementById('slot-template').content.firstElementChild.cloneNode(true);
+      setText(node.querySelector('[data-template-id="slot-department"]'),record.department || 'Department unavailable');
+      setText(node.querySelector('[data-template-id="slot-date"]'),displayDate(record.preferred_date));
+      setText(node.querySelector('[data-template-id="slot-time"]'),/^\d{2}:\d{2}$/.test(record.preferred_time || '') ? record.preferred_time : 'Time unavailable');
+      setText(node.querySelector('[data-template-id="slot-status"]'),record.status || 'Requested');
+      scheduleList.appendChild(node);
+    }
+    setText(scheduleMessage,backendRecords.length ? '' : 'No appointment requests saved in this browser yet.');
+    const today = new Date().toLocaleDateString('en-CA');
+    const departments = new Set(backendRecords.map(row => row.department).filter(Boolean)).size;
+    const stats = {
+      'doctor-total':backendRecords.length,
+      'doctor-upcoming':backendRecords.filter(row => validDate(row.preferred_date) && row.preferred_date >= today).length,
+      'doctor-departments':departments,
+      'admin-total':backendRecords.length,
+      'admin-requested':backendRecords.filter(row => String(row.status || '').toLowerCase() === 'requested').length,
+      'admin-departments':departments
+    };
+    for (const [id,value] of Object.entries(stats)) setText(document.getElementById(id),String(value));
+  }
+  function updateMinimumDate() { dateInput.min = new Date().toLocaleDateString('en-CA');
+  }
+  updateMinimumDate();
+  retryButton.addEventListener('click',renderSchedule);
+  form.addEventListener('submit',event => {
+    event.preventDefault();
+    updateMinimumDate();
+    bookingStatus.className = 'message';
+    setText(bookingStatus,'');
+    if (!form.reportValidity()) return;
+    if (dateInput.value < dateInput.min) {
+      setText(bookingStatus,'Please choose today or a future date.');
+      bookingStatus.classList.add('error');
+  dateInput.focus();
+  return;
+    }
+    const fields = new FormData(form);
+    const record = {
+      full_name:String(fields.get('full_name') || '').trim(),
+      email:String(fields.get('email') || '').trim(),
+      phone:String(fields.get('phone') || '').trim(),
+      department:String(fields.get('department') || ''),
+      preferred_date:String(fields.get('preferred_date') || ''),
+      preferred_time:String(fields.get('preferred_time') || ''),
+      status:'Requested', created_at:new Date().toISOString()
+    };
+    submitButton.disabled = true;
+    try {
+      const records = readRecords();
+      if (records.length >= 999) throw new Error('The request list is full. Please contact the clinic directly.');
+      records.push(record);
+      localStorage.setItem(STORAGE_KEY,JSON.stringify(records));
+      setText(bookingStatus,'Your request was saved in this browser only. This is a demonstration, not a live clinic booking system.');
+      bookingStatus.classList.add('success');
+      form.reset();
+  updateMinimumDate();
+  renderSchedule();
+    } catch (error) {
+      setText(bookingStatus,error && error.message ? error.message : 'We could not save your request in this browser.');
+      bookingStatus.classList.add('error');
+    } finally { submitButton.disabled = false;
+  }
+  });
+  renderSchedule();
+</script> </body>
+</html> 
